@@ -79,3 +79,79 @@ If SwiftData is configured to use CloudKit:
 
 - If installed, make sure SwiftLint returns no warnings or errors before committing.
 
+## Other Instuctions
+
+- Always use English comments
+- Always use English filenames
+
+## Folders Exemples structure
+
+```
+MyApp/
+├── MyAppApp.swift
+├── Features/
+│   ├── User/
+│   │   ├── Models/
+│   │   │   ├── User.swift
+│   │   │   └── UserDTO.swift
+│   │   ├── Views/
+│   │   │   ├── UserListView.swift
+│   │   │   └── UserDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── UserViewModel.swift
+│   │   └── Mappers/
+│   │       └── UserMapper.swift
+│   ├── Post/
+│   │   ├── Models/
+│   │   │   ├── Post.swift
+│   │   │   └── PostDTO.swift
+│   │   ├── Views/
+│   │   │   ├── PostListView.swift
+│   │   │   └── PostDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── PostViewModel.swift
+│   │   └── Mappers/
+│   │       └── PostMapper.swift
+│   ├── Comment/
+│   │   ├── Models/
+│   │   │   ├── Comment.swift
+│   │   │   └── CommentDTO.swift
+│   │   ├── Views/
+│   │   │   ├── CommentListView.swift
+│   │   │   └── CommentDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── CommentViewModel.swift
+│   │   └── Mappers/
+│   │       └── CommentMapper.swift
+│   └── Auth/
+│       ├── Models/
+│       │   └── AuthUser.swift
+│       ├── Views/
+│       │   ├── LoginView.swift
+│       │   └── SignupView.swift
+│       └── ViewModels/
+│           └── AuthViewModel.swift
+├── Services/
+│   ├── Network/
+│   │   ├── APIClient.swift
+│   │   └── Endpoints.swift
+│   ├── Database/
+│   │   ├── CoreDataStack.swift
+│   │   └── DatabaseManager.swift
+│   └── AuthService.swift
+├── Coordinators/
+│   ├── AppCoordinator.swift
+│   └── AuthCoordinator.swift
+├── Utilities/
+│   ├── Extensions/
+│   │   ├── String+Extensions.swift
+│   │   └── Date+Extensions.swift
+│   ├── Helpers/
+│   │   ├── ImageLoader.swift
+│   │   └── JSONParser.swift
+│   └── Constants.swift
+└── Resources/
+    ├── Assets.xcassets
+
+```
+
