@@ -511,9 +511,6 @@ Features/
     ├── Models/
     ├── Views/
     ├── ViewModels/
-    ├── Services/
-    ├── Components/
-    └── Mappers/
 ```
 
 ---
