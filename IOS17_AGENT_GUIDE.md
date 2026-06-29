@@ -492,26 +492,79 @@ Support:
 
 ```
 MyApp/
-├── App/
+├── MyAppApp.swift
 ├── Features/
-├── Components/
+│   ├── User/
+│   │   ├── Models/
+│   │   │   ├── User.swift
+│   │   │   └── UserDTO.swift
+│   │   ├── Views/
+│   │   │   ├── UserListView.swift
+│   │   │   └── UserDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── UserViewModel.swift
+│   │   └── Mappers/
+│   │       └── UserMapper.swift
+│   │
+│   ├── Post/
+│   │   ├── Models/
+│   │   │   ├── Post.swift
+│   │   │   └── PostDTO.swift
+│   │   ├── Views/
+│   │   │   ├── PostListView.swift
+│   │   │   └── PostDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── PostViewModel.swift
+│   │   └── Mappers/
+│   │       └── PostMapper.swift
+│   │
+│   ├── Comment/
+│   │   ├── Models/
+│   │   │   ├── Comment.swift
+│   │   │   └── CommentDTO.swift
+│   │   ├── Views/
+│   │   │   ├── CommentListView.swift
+│   │   │   └── CommentDetailView.swift
+│   │   ├── ViewModels/
+│   │   │   └── CommentViewModel.swift
+│   │   └── Mappers/
+│   │       └── CommentMapper.swift
+│   │
+│   └── Auth/
+│       ├── Models/
+│       │   └── AuthUser.swift
+│       ├── Views/
+│       │   ├── LoginView.swift
+│       │   └── SignupView.swift
+│       └── ViewModels/
+│           └── AuthViewModel.swift
+│
 ├── Services/
-├── Models/
+│   ├── Network/
+│   │   ├── APIClient.swift
+│   │   └── Endpoints.swift
+│   ├── Database/
+│   │   ├── CoreDataStack.swift
+│   │   └── DatabaseManager.swift
+│   └── AuthService.swift
+│
+├── Coordinators/
+│   ├── AppCoordinator.swift
+│   └── AuthCoordinator.swift
+│
 ├── Utilities/
-├── Resources/
-├── Extensions/
-└── Tests/
+│   ├── Extensions/
+│   │   ├── String+Extensions.swift
+│   │   └── Date+Extensions.swift
+│   ├── Helpers/
+│   │   ├── ImageLoader.swift
+│   │   └── JSONParser.swift
+│   └── Constants.swift
+│
+└── Resources/
+    └── Assets.xcassets
 ```
 
-Recommended Feature structure:
-
-```
-Features/
-└── User/
-    ├── Models/
-    ├── Views/
-    ├── ViewModels/
-```
 
 ---
 
